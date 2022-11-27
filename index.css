@@ -1,0 +1,136 @@
+/* :root {
+    --brand-main-color: #f56347;
+    --main-background-color: #fbd7b5;
+    --main-font-color: #0c2461;
+    --paragraph-font-color: #778791;
+  } */
+
+* {
+  box-sizing: border-box;
+  font-size: small;
+}
+body {
+  text-align: center;
+  background-color: #fafafa;
+}
+input {
+  width: 70%;
+  line-height: 1.8rem;
+  background-color: #fafafa;
+  border: 1px solid rgb(128, 128, 128, 0.3);
+  border-radius: 2px;
+}
+
+.main-wrap img {
+  width: 50%;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+button {
+  width: 70%;
+  line-height: 1.3rem;
+  background-color: #0095f6;
+  color: white;
+  border: 1px solid #0095f6;
+  border-radius: 2px;
+  margin-top: 1rem;
+}
+.first-form {
+  margin-bottom: 0.5rem;
+}
+h5 {
+  color: rgb(128, 128, 128, 0.5);
+}
+.or {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 70%;
+  margin: 0 auto;
+}
+.line {
+  align-self: center;
+  height: 1px;
+  background: rgb(128, 128, 128, 0.5);
+}
+.sidebar-wrap {
+  display: none;
+}
+i,
+span {
+  color: #435a8c;
+  font-weight: bolder;
+}
+.signup span {
+  color: #0095f6;
+  font-weight: bolder;
+}
+.global-wrap {
+  display: flex;
+  margin: 2rem auto;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.main-wrap {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+.install img {
+  width: 100px;
+  height: 30px;
+}
+nav li {
+  display: flex;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(128, 128, 128, 0.5);
+  font-size: smaller;
+}
+footer {
+  width: 90%;
+  margin: auto;
+  color: rgb(128, 128, 128, 0.5);
+}
+footer p {
+  display: inline;
+  padding-left: 1rem;
+  font-size: smaller;
+}
+footer select {
+  background-color: #fafafa;
+  border: 0;
+  color: rgb(128, 128, 128, 0.5);
+  font-size: smaller;
+}
+
+@media screen and (min-width: 450px) {
+  .login-wrap,
+  .signup {
+    background-color: white;
+    border: 1px solid rgb(128, 128, 128, 0.3);
+  }
+  .main-wrap {
+    row-gap: 0.5rem;
+    width: 300px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .sidebar-wrap img {
+    width: 400px;
+  }
+  .sidebar-wrap {
+    display: initial;
+  }
+  .main-wrap {
+    width: 300px;
+  }
+}
